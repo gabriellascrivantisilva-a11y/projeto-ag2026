@@ -1,0 +1,162 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32; /* Verde Agro */
+}
+
+.logo span {
+    color: #ef6c00; /* Laranja da Força/Terra */
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2e7d32;
+}
+
+nav .btn-contato {
+    background-color: #2e7d32;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+nav .btn-contato:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* Banner Principal */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-conteudo h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-conteudo p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #ef6c00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #d84315;
+}
+
+/* Seção de Pilares */
+.secao-pilares {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.secao-pilares h2 {
+    color: #2e7d32;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #2e7d32;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Seção Sobre */
+.secao-sobre {
+    background-color: #e8f5e9;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.sobre-texto max-width {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.secao-sobre h2 {
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #212121;
+    color: #9e9e9e;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
